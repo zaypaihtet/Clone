@@ -1,8 +1,5 @@
 #!/usr/bin/python2
 #coding=utf-8
-
-
-
 import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
@@ -45,8 +42,6 @@ def jalan(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.07)
-
-#Dev:love_hacker
 ##### LOGO #####
 logo = """
                                                                                                                                  \033[1;91m
@@ -89,7 +84,7 @@ while (loop == 'true'):
     if (username == CorrectUsername):
     	password = raw_input("\033[1;91m🗝 \x1b[1;91mTool Password \x1b[1;91m»» \x1b[1;92m")
         if (password == CorrectPassword):
-            print "Logged in successfully as " + username #Dev:love_hacker
+            print "Logged in successfully as " + username 
 	    time.sleep(2)
             loop = 'false'
         else:
@@ -116,7 +111,7 @@ def login():
 		pwd = raw_input('\033[1;91m[+] \x1b[1;91mPassword\x1b[1;96m: \x1b[1;93m')
 		tik()
 		try:
-			br.open('https://m.facebook.com')
+			br.open('https://www.facebook.com')
 		except mechanize.URLError:
 			print"\n\x1b[1;96mThere is no internet connection"
 			keluar()
